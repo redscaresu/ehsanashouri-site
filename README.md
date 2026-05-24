@@ -6,7 +6,7 @@ Static freelance website for `ashouri.xyz`.
 
 - `index.html`: single-page marketing site
 - `styles.css`: site styles
-- `assets/portrait-placeholder.svg`: placeholder art for the hero image
+- `assets/me.jpeg`: hero portrait used in the landing section
 
 ## Recommended domain setup
 
@@ -17,10 +17,8 @@ If you prefer keeping the blog on the main domain temporarily, link to it from t
 
 ## Before publishing
 
-1. Replace the hero placeholder with a real portrait.
-2. Add your direct email address or scheduling link in the contact section.
-3. Decide whether the hero photo in front of 10 Downing Street looks deliberate enough. If not, use a cleaner portrait.
-4. Update outbound links if you move the blog to `blog.ashouri.xyz`.
+1. Add your direct email address or scheduling link in the contact section.
+2. Update outbound links if you move the blog to `blog.ashouri.xyz`.
 
 ## GitHub Pages
 
