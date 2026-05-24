@@ -1,24 +1,34 @@
-# Ehsan Ashouri Site
+# Ashouri Site
 
-Static freelance website for `ashouri.xyz`.
+Static website for Ashouri, an independent software engineering consultancy at `ashouri.xyz`.
 
 ## Structure
 
 - `index.html`: single-page marketing site
 - `styles.css`: site styles
 - `assets/me.jpeg`: hero portrait used in the landing section
+- `assets/ashouri-favicon.svg`: underlined `A` favicon
+- `assets/ashouri-wordmark.svg`: Ashouri wordmark for light backgrounds
+- `assets/ashouri-wordmark-dark.svg`: Ashouri wordmark for dark backgrounds
+- `assets/simplifica-sans.ttf`: bundled Simplifica font used by the wordmark
 
-## Recommended domain setup
+## Positioning
+
+The site positions Ashouri as independent software engineering advisory work across platform engineering,
+SRE, infrastructure, regulated financial infrastructure, and AI adoption in engineering and government
+organisations.
+
+## Domain Setup
 
 - `ashouri.xyz`: this site
 - `blog.ashouri.xyz`: existing blog app
+- `saruman-blog.ashouri.xyz`: agents blog linked from the top navigation
 
-If you prefer keeping the blog on the main domain temporarily, link to it from the navigation and move it later.
+## Maintenance Notes
 
-## Before publishing
-
-1. Add your direct email address or scheduling link in the contact section.
-2. Update outbound links if you move the blog to `blog.ashouri.xyz`.
+1. Keep the hero and contact copy aligned with the independent Ashouri positioning.
+2. Keep the blog and agents blog links in sync with the deployed domains.
+3. If the wordmark changes, update both SVG wordmarks and keep `simplifica-sans.ttf` available.
 
 ## GitHub Pages
 
