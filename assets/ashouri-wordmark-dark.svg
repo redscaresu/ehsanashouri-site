@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">Ashouri wordmark dark</title>
+  <desc id="desc">A simple Ashouri surname wordmark for dark backgrounds.</desc>
+  <style>
+    @font-face {
+      font-family: "Simplifica";
+      src: url("simplifica-sans.ttf") format("truetype");
+    }
+  </style>
+  <rect width="900" height="220" fill="none"/>
+  <text x="44" y="142" fill="#F8F4EC" font-family="Simplifica, 'Avenir Next Condensed', 'Arial Narrow', sans-serif" font-size="138" font-weight="400" letter-spacing="2">Ashouri</text>
+  <path d="M48 168h292" stroke="#A4432A" stroke-width="3" stroke-linecap="square"/>
+</svg>
