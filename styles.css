@@ -76,8 +76,8 @@ a {
   grid-template-columns: 1.35fr 0.95fr;
   gap: 2rem;
   align-items: stretch;
-  min-height: calc(100vh - 6rem);
-  padding: 3rem 0 2rem;
+  min-height: calc(92vh - 6rem);
+  padding: 2.25rem 0 1.5rem;
 }
 
 .hero-copy,
@@ -229,7 +229,7 @@ h2 {
 }
 
 .section {
-  padding: 5rem 0 1rem;
+  padding: 4rem 0 0.5rem;
 }
 
 .section-heading {
@@ -302,8 +302,8 @@ h2 {
 }
 
 .contact-section {
-  margin-top: 4rem;
-  padding: 2.5rem;
+  margin-top: 3rem;
+  padding: 2rem 2rem 2.25rem;
   border-radius: 2rem;
   border: 1px solid rgba(31, 42, 44, 0.08);
   background: linear-gradient(180deg, rgba(255, 250, 242, 0.72), rgba(255, 255, 255, 0.9));
@@ -320,6 +320,10 @@ h2 {
   .hero {
     min-height: auto;
     padding-top: 1.5rem;
+  }
+
+  .section {
+    padding-top: 3rem;
   }
 
   .portrait-frame {
