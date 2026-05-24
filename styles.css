@@ -196,7 +196,7 @@ h2 {
   background:
     linear-gradient(180deg, rgba(20, 28, 31, 0.08), rgba(20, 28, 31, 0.58)),
     linear-gradient(180deg, rgba(255, 244, 229, 0.12), rgba(255, 244, 229, 0)),
-    url("assets/me.jpeg") center 22%/cover no-repeat;
+    url("assets/me.jpeg?v=20260524-1") center 22%/cover no-repeat;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
