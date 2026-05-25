@@ -1,14 +1,16 @@
 :root {
-  --bg: #f2eee6;
-  --surface: rgba(255, 252, 247, 0.8);
-  --surface-strong: #fffaf2;
-  --ink: #1f2a2c;
-  --muted: #5e6668;
-  --line: rgba(31, 42, 44, 0.12);
-  --accent: #a4432a;
-  --accent-dark: #772f1a;
-  --accent-soft: #f0d4b9;
-  --shadow: 0 20px 60px rgba(40, 28, 16, 0.12);
+  --bg: #081111;
+  --surface: rgba(16, 26, 26, 0.9);
+  --surface-strong: #142020;
+  --ink: #e8f0e8;
+  --muted: #91a39c;
+  --line: #263939;
+  --line-strong: #3c5552;
+  --accent: #49e58f;
+  --accent-dark: #9dd6ff;
+  --accent-soft: rgba(73, 229, 143, 0.14);
+  --amber: #f0b45f;
+  --shadow: 0 18px 60px rgba(0, 0, 0, 0.38);
 }
 
 @font-face {
@@ -29,9 +31,12 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(164, 67, 42, 0.18), transparent 28rem),
-    radial-gradient(circle at top right, rgba(96, 117, 109, 0.18), transparent 26rem),
-    linear-gradient(180deg, #efe7da 0%, #f8f4ec 38%, #f2eee6 100%);
+    linear-gradient(rgba(73, 229, 143, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(73, 229, 143, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 15% 0%, rgba(73, 229, 143, 0.16), transparent 28rem),
+    radial-gradient(circle at 90% 10%, rgba(157, 214, 255, 0.11), transparent 28rem),
+    var(--bg);
+  background-size: 28px 28px, 28px 28px, auto, auto, auto;
   font-family: "Manrope", sans-serif;
 }
 
@@ -51,6 +56,7 @@ a {
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .brand {
@@ -63,6 +69,7 @@ a {
   line-height: 0.78;
   text-decoration: none;
   letter-spacing: 0;
+  color: var(--ink);
 }
 
 .brand::after {
@@ -82,12 +89,14 @@ a {
 
 .site-nav a {
   color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.92rem;
   text-decoration: none;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--ink);
+  color: var(--accent);
 }
 
 .hero {
@@ -103,13 +112,13 @@ a {
 .portrait-panel,
 .card,
 .contact-section {
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(10px);
 }
 
 .hero-copy {
   padding: 2.5rem;
   border: 1px solid var(--line);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -121,6 +130,7 @@ a {
   font-size: 0.78rem;
   font-weight: 800;
   color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 h1,
@@ -132,7 +142,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: "Newsreader", serif;
+  font-family: "Manrope", sans-serif;
 }
 
 h1 {
@@ -176,30 +186,35 @@ h2 {
   justify-content: center;
   min-height: 3.25rem;
   padding: 0.9rem 1.4rem;
-  border-radius: 999px;
+  border-radius: 0.25rem;
   border: 1px solid transparent;
   text-decoration: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.92rem;
   font-weight: 700;
 }
 
 .button-primary {
-  background: var(--ink);
-  color: #f7f4ef;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #071010;
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #11191a;
+  background: #73f0a9;
 }
 
 .button-secondary {
-  border-color: var(--line);
-  background: rgba(255, 255, 255, 0.42);
+  border-color: var(--line-strong);
+  background: rgba(16, 26, 26, 0.72);
+  color: var(--ink);
 }
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  background: rgba(255, 255, 255, 0.72);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .portrait-panel {
@@ -210,11 +225,10 @@ h2 {
   height: 100%;
   min-height: 34rem;
   padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(20, 28, 31, 0.08), rgba(20, 28, 31, 0.58)),
-    linear-gradient(180deg, rgba(255, 244, 229, 0.12), rgba(255, 244, 229, 0)),
+    linear-gradient(180deg, rgba(8, 17, 17, 0.08), rgba(8, 17, 17, 0.78)),
     url("assets/me.jpeg?v=20260524-1") center 22%/cover no-repeat;
   box-shadow: var(--shadow);
   display: flex;
@@ -226,9 +240,11 @@ h2 {
   align-self: flex-start;
   margin-bottom: 1rem;
   padding: 0.5rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(255, 250, 242, 0.9);
-  color: var(--accent-dark);
+  border: 1px solid var(--line-strong);
+  border-radius: 0.25rem;
+  background: rgba(8, 17, 17, 0.78);
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -237,8 +253,8 @@ h2 {
 
 .portrait-title {
   margin: 0;
-  color: #fff8f1;
-  font-family: "Newsreader", serif;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
   font-size: 2rem;
 }
 
@@ -270,15 +286,21 @@ h2 {
 
 .card {
   padding: 1.5rem;
-  border-radius: 1.6rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.62);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
 .card h3 {
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
+}
+
+.card h3::before {
+  content: "./";
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
 .split {
@@ -323,9 +345,11 @@ h2 {
 .contact-section {
   margin-top: 3rem;
   padding: 2rem 2rem 2.25rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(31, 42, 44, 0.08);
-  background: linear-gradient(180deg, rgba(255, 250, 242, 0.72), rgba(255, 255, 255, 0.9));
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 80% 0%, rgba(73, 229, 143, 0.12), transparent 22rem),
+    var(--surface-strong);
   box-shadow: var(--shadow);
 }
 
@@ -364,7 +388,7 @@ h2 {
   .portrait-frame,
   .contact-section,
   .card {
-    border-radius: 1.35rem;
+    border-radius: 0.5rem;
   }
 
   h1 {
